@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Housekeeping | Profesyonel Temizlik Hizmetleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        violet: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(76, 29, 149, 0.8), rgba(124, 58, 237, 0.6)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .instagram-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+    </style>
+</head>
+<body class="bg-violet-50 text-gray-800 font-sans antialiased">
+
+    <div class="fixed bottom-4 right-4 md:bottom-6 md:right-6 flex flex-col gap-3 md:gap-4 z-50">
+        <a href="https://www.instagram.com/violethousekeeping?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-2xl md:text-3xl shadow-lg hover:scale-110 transition-transform instagram-gradient">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/905405846538" target="_blank" rel="noopener noreferrer" class="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-2xl md:text-3xl shadow-lg hover:scale-110 transition-transform" style="background-color: #60D669;">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <nav class="fixed w-full z-40 glass shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-leaf text-violet-600 text-2xl md:text-3xl"></i>
+                    <span class="font-bold text-xl md:text-2xl text-violet-900 tracking-tight">Violet<span class="font-light text-violet-600">Housekeeping</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-6 items-center font-medium text-gray-600">
+                    <a href="#" class="hover:text-violet-600 transition">Anasayfa</a>
+                    <a href="#hakkimizda" class="hover:text-violet-600 transition">Hakkımızda</a>
+                    <a href="#hizmetlerimiz" class="hover:text-violet-600 transition">Hizmetlerimiz</a>
+                    <a href="#galeri" class="hover:text-violet-600 transition">Galeri</a>
+                    <a href="#sss" class="hover:text-violet-600 transition">SSS</a>
+                    <a href="#iletisim" class="bg-violet-600 text-white px-5 py-2 rounded-full hover:bg-violet-700 transition shadow-lg shadow-violet-200">İletişim</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-violet-900 hover:text-violet-600 focus:outline-none text-3xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-violet-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col font-medium text-gray-600 text-center">
+                <a href="#" class="block px-3 py-3 hover:text-violet-600 hover:bg-violet-50 rounded-md transition mobile-link">Anasayfa</a>
+                <a href="#hakkimizda" class="block px-3 py-3 hover:text-violet-600 hover:bg-violet-50 rounded-md transition mobile-link">Hakkımızda</a>
+                <a href="#hizmetlerimiz" class="block px-3 py-3 hover:text-violet-600 hover:bg-violet-50 rounded-md transition mobile-link">Hizmetlerimiz</a>
+                <a href="#galeri" class="block px-3 py-3 hover:text-violet-600 hover:bg-violet-50 rounded-md transition mobile-link">Galeri</a>
+                <a href="#sss" class="block px-3 py-3 hover:text-violet-600 hover:bg-violet-50 rounded-md transition mobile-link">SSS</a>
+                <a href="#iletisim" class="block px-3 py-3 mt-4 bg-violet-600 text-white rounded-full hover:bg-violet-700 transition shadow-lg w-2/3 mx-auto mobile-link">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 text-white">
+                <span class="uppercase tracking-widest text-violet-200 font-semibold text-xs md:text-sm mb-4 block">Hayatınızı Kolaylaştırın</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Profesyonel ve Güvenilir, <br>
+                    <span class="text-violet-300">Temizlik Hizmeti</span>
+                </h1>
+                <p class="text-base md:text-lg lg:text-xl text-violet-100 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Günlük hayatın temposuna ayak uydururken temizlikle uğraşmayın. Biz, sizin için tüm detayları düşünüyoruz!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#iletisim" class="bg-white text-violet-700 font-bold px-8 py-4 rounded-full hover:bg-violet-50 transition shadow-xl w-full sm:w-auto text-center">Hemen Randevu Alın</a>
+                    <a href="#hizmetlerimiz" class="glass text-white font-bold px-8 py-4 rounded-full hover:bg-white/20 transition w-full sm:w-auto text-center">Hizmetleri İncele</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimizda" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-violet-900 mb-6">Violet Housekeeping ile Yaşam Alanlarınızda Fark Yaratın!</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Violet Grup olarak Mimarlık, Temizlik ve Peyzaj sektörlerinde faaliyet gösteriyoruz. Violet Housekeeping markamızla profesyonel temizlik hizmetlerinde yüksek kaliteyi ve müşteri memnuniyetini ön planda tutuyoruz.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Ev, ofis, villa ve inşaat sonrası temizlik hizmetleriyle sektördeki deneyimimizi her geçen gün pekiştiriyoruz. Alanında uzman kadromuz, titizlikle seçilen temizlik malzemeleri ve son teknoloji ekipmanlarla en iyi sonuçları elde ediyor. Amacımız, her müşterimize temiz, sağlıklı ve hijyenik yaşam alanları sunmak.
+                    </p>
+                    <div class="flex gap-8 justify-center lg:justify-start">
+                        <div class="text-center">
+                            <span class="block text-3xl md:text-4xl font-extrabold text-violet-600 mb-1">10+</span>
+                            <span class="text-xs md:text-sm font-medium text-gray-500">Yıllık Tecrübe</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="block text-3xl md:text-4xl font-extrabold text-violet-600 mb-1">1000+</span>
+                            <span class="text-xs md:text-sm font-medium text-gray-500">Mutlu Müşteri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mt-8 lg:mt-0">
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop" alt="Temizlik Ekibi" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-6 glass p-4 md:p-6 rounded-xl shadow-lg w-[90%] md:w-auto">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-violet-100 p-3 rounded-full text-violet-600 shrink-0">
+                                <i class="fa-solid fa-shield-halved text-xl md:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-violet-900 text-sm md:text-base">Güvenilir Hizmet</h4>
+                                <p class="text-xs md:text-sm text-gray-500">Sigortalı ve eğitimli personel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmetlerimiz" class="py-16 md:py-20 bg-violet-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-violet-900 mb-4">Hizmetlerimiz</h2>
+                <p class="text-gray-600 text-sm md:text-base">Violet Housekeeping olarak temizlik ve hijyen alanında sektörde fark yaratan, güvenilir ve kaliteli hizmet anlayışımızla öne çıkıyoruz. Detaylara verdiğimiz önemle yaşam alanlarınızı ferahlatıyoruz.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-house text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Ev Temizliği</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-building text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Ofis Temizliği</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-helmet-safety text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">İnşaat Sonrası</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-house-chimney-window text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Villa Temizliği</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-window-maximize text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Cam Temizliği</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-rug text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Halıflex Temizliği</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl text-center hover:-translate-y-2 transition duration-300 shadow-sm hover:shadow-xl group cursor-pointer border-t-4 border-t-violet-500">
+                    <i class="fa-solid fa-broom text-3xl md:text-4xl text-violet-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="text-lg md:text-xl font-bold text-violet-900 mb-2">Zemin & Cilalama</h3>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl flex flex-col justify-center items-center bg-violet-600 text-white hover:bg-violet-700 transition duration-300 shadow-sm hover:shadow-xl cursor-pointer">
+                    <i class="fa-solid fa-arrow-right text-3xl md:text-4xl mb-2"></i>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Tüm Servisler</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-violet-900 mb-4">Galeri</h2>
+                <p class="text-gray-600 text-sm md:text-base">Temizlik hizmetlerimizden kareler ve tanıtım videomuz.</p>
+            </div>
+            
+            <div class="mb-12 md:mb-16 max-w-sm mx-auto w-full">
+                <div class="rounded-2xl overflow-hidden shadow-xl bg-violet-900 border-4 border-violet-100">
+                    <video controls class="w-full h-auto aspect-[9/16] object-cover bg-black">
+                        <source src="video.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <img src="img1.jpeg" alt="Galeri 1" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img2.jpeg" alt="Galeri 2" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img3.jpeg" alt="Galeri 3" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img4.jpeg" alt="Galeri 4" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img5.jpeg" alt="Galeri 5" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img6.jpeg" alt="Galeri 6" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img7.jpeg" alt="Galeri 7" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img8.jpeg" alt="Galeri 8" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+                <img src="img9.jpeg" alt="Galeri 9" class="w-full h-72 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300 bg-violet-100 border border-violet-100 flex items-center justify-center text-violet-400">
+            </div>
+        </div>
+    </section>
+
+    <section id="sss" class="py-16 md:py-20 bg-violet-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-violet-900 mb-4">Sıkça Sorulan Sorular</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="group bg-white rounded-lg shadow-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 md:p-6 text-violet-900 text-sm md:text-base">
+                        <span class="pr-4">Temizlik hizmetlerinizi hangi alanlarda sunuyorsunuz?</span>
+                        <span class="transition group-open:rotate-180 shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 text-sm md:text-base text-gray-600">
+                        Violet Housekeeping olarak ev, ofis, villa, inşaat sonrası temizlikler, halıflex temizliği, koltuk yıkama, kristalize mermer cilalama ve zemin temizliği gibi hizmetler sunuyoruz.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-lg shadow-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 md:p-6 text-violet-900 text-sm md:text-base">
+                        <span class="pr-4">Temizlik hizmetlerinizin fiyatları nasıl belirleniyor?</span>
+                        <span class="transition group-open:rotate-180 shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 text-sm md:text-base text-gray-600">
+                        Fiyatlarımız, hizmetin kapsamına, alan büyüklüğüne ve temizlik türüne göre değişiklik göstermektedir. Net bir fiyat alabilmek için yerinde ücretsiz keşif yapılmasını talep edebilirsiniz.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-lg shadow-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 md:p-6 text-violet-900 text-sm md:text-base">
+                        <span class="pr-4">Kullanılan ürünler hakkında bilgi alabilir miyim?</span>
+                        <span class="transition group-open:rotate-180 shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 text-sm md:text-base text-gray-600">
+                        Çevre dostu ve sağlık açısından güvenli, dünya markası (Marc, Domestos, Cif vb.) ürünler kullanıyoruz. Açık ve kimyasal zarar verici ürünler kullanmıyoruz.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-lg shadow-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 md:p-6 text-violet-900 text-sm md:text-base">
+                        <span class="pr-4">Temizlik hizmeti ne kadar sürer?</span>
+                        <span class="transition group-open:rotate-180 shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 text-sm md:text-base text-gray-600">
+                        Yapılacak temizlik türüne ve alanın büyüklüğüne bağlı olarak değişmektedir. Ortalama ev ve ofis temizliği 6-8 saat sürebilmektedir.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="bg-violet-950 text-violet-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12">
+                
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-leaf text-violet-500 text-3xl"></i>
+                        <span class="font-bold text-2xl text-white tracking-tight">Violet<span class="font-light text-violet-500">Housekeeping</span></span>
+                    </div>
+                    <p class="mb-6 text-violet-300 text-sm md:text-base">
+                        Violet Grup olarak Mimarlık, Temizlik ve Peyzaj sektörlerinde faaliyet gösteriyoruz. Violet Housekeeping markamızla profesyonel temizlik hizmetlerinde yüksek kaliteyi ön planda tutuyoruz.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/violethousekeeping?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/905405846538" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-violet-800 pb-2">Hızlı Erişim</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a href="#" class="hover:text-white transition">Anasayfa</a></li>
+                        <li><a href="#hakkimizda" class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="#hizmetlerimiz" class="hover:text-white transition">Hizmetlerimiz</a></li>
+                        <li><a href="#galeri" class="hover:text-white transition">Galeri</a></li>
+                        <li><a href="#sss" class="hover:text-white transition">SSS</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-violet-800 pb-2">İletişim</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-violet-500 shrink-0"></i>
+                            <span>İlkbahar Mahallesi Sinpaş Altınoran Kule2023 No:20 Oran-Çankaya / Ankara</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-violet-500 shrink-0"></i>
+                            <a href="tel:+905405846538" class="hover:text-white transition">0 (540) 584 65 38</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-violet-500 shrink-0"></i>
+                            <a href="mailto:info@violethousekeeping.com.tr" class="hover:text-white transition break-all">info@violethousekeeping.com.tr</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-violet-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-center md:text-left gap-4">
+                <p>Copyright &copy; 2026 Violet Housekeeping. Tüm Hakları Saklıdır.</p>
+                <div class="space-x-4">
+                    <a href="#" class="hover:text-white transition">KVKK Politikası</a>
+                    <a href="#" class="hover:text-white transition">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+        const icon = btn.querySelector('i');
+
+        // Toggle menu on button click
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
